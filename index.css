@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar css start here... */
+.navbar {
+  font-family: sans-serif;
+  border: 1px solid;
+  height: 80px;
+  width: 100%;
+  background-color: #1d2126;
+  display: flex;
+  position: fixed;
+  top: 0;
+
+  z-index: 1000;
+}
+.navbar > div {
+  display: flex;
+  width: 65%;
+  margin: auto;
+}
+.companyName {
+  /* border: 1px solid white; */
+  flex: 2;
+  margin: 30px 0;
+}
+.companyName > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.navBtns {
+  flex: 3;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
+}
+.navBtns > a {
+  border: 2px solid transparent;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+
+  padding: 5px 9px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+.navBtns > a:hover {
+  border: 2px solid #5a6068;
+}
+
+.navBtns > a:focus {
+  border: 2px solid #23b7a3;
+}
+/* navbar css end here... */
+
+.container {
+  margin-top: 78px;
+  font-family: sans-serif;
+}
+.carousel {
+  width: 100%;
+  height: 660px;
+  background-image: url("./images/bgi1.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+}
+.carouselUpperDiv {
+  color: #fff;
+  width: 654px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  height: fit-content;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.carouselUpperDiv > p {
+  color: #ccd0d7;
+  margin: 15px 0;
+}
+.carouselUpperDiv > a {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.carouselUpperDiv > a:hover {
+  background-color: #23b7a3;
+  border: 2px solid #23b7a3;
+}
