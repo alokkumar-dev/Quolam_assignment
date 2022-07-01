@@ -63,6 +63,7 @@
 .container {
   margin-top: 78px;
   font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .carousel {
   width: 100%;
@@ -84,6 +85,8 @@
 .carouselUpperDiv > p {
   color: #ccd0d7;
   margin: 15px 0;
+  line-height: 23px;
+  word-spacing: 3px;
 }
 .carouselUpperDiv > a {
   text-decoration: none;
@@ -130,7 +133,7 @@
 }
 .modest_container {
   display: flex;
-  gap: 20px;
+  gap: 35px;
   margin: 30px auto;
 }
 .leftSide {
@@ -141,6 +144,8 @@
 }
 .leftSide > p {
   margin-bottom: 30px;
+  line-height: 23px;
+  word-spacing: 3px;
 }
 .rightSide {
   flex: 2;
@@ -153,7 +158,7 @@
   align-items: center;
   padding: 0 15px;
   border: none;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   font-size: 16px;
   font-weight: 400;
   background-color: #23b7a4;
@@ -167,8 +172,11 @@
 .modestBox > div > p {
   font-size: 14px;
   color: #8d8f92;
+  /* color: red; */
   font-weight: 300;
   margin: 10px 15px;
+  line-height: 23px;
+  word-spacing: 3px;
 }
 .Social_i_cont {
   display: flex;
@@ -252,7 +260,7 @@
   gap: 30px;
   margin-top: 50px;
 }
-.renderLovelyImg>div{
+.renderLovelyImg > div {
   position: relative;
 }
 .lovelyImage {
@@ -261,7 +269,7 @@
 .LovelyVerticalLine {
   height: 24px;
   width: 7px;
-  background-color: #c8cdd0;
+  background-color: #aaaaaa72;
   color: #4e5a62;
   float: left;
   margin-right: 14px;
@@ -283,64 +291,166 @@
 
   color: #e1e6ea;
 }
-.showMeMoreBtn{
-  /* text-align: center;
-   */
-   margin-left: 42%;
-   margin-right: 42%;
-   margin-top: 50px;
-   margin-bottom: 50px;
-   padding: 10px 15px;
-   border-radius: 5px;
-   border: 2px solid #e1e6ea;
-   background-color: transparent;
-   color: #e1e6ea;
-   cursor: pointer;
+.showMeMoreBtn {
+  margin-left: 42%;
+  margin-right: 42%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 2px solid #e1e6ea;
+  background-color: transparent;
+  color: #e1e6ea;
+  cursor: pointer;
 }
 /* LOVELY WORK CSS end here... */
 
-
 /* Waht we Do CSS start here... */
 
-.whatWeDoHome{
+.whatWeDoHome {
   padding-top: 60px;
   width: 65%;
   /* border: 1px solid black; */
   margin: auto;
   height: 600px;
 }
-.renderWhatDoData{
+.renderWhatDoData {
   margin-top: 60px;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-
 }
-.renderWhatDoData>div{
+.renderWhatDoData > div {
   border: 1px solid;
   text-align: center;
+  /* margin-bottom: 30px; */
 }
-.renderWhatDoData>div>img{
+.renderWhatDoData > div > img {
   margin-top: 10px;
   width: 50px;
   height: 50px;
 }
-.renderWhatDoData>div>h4{
+.renderWhatDoData > div > h4 {
   font-size: 14px;
   margin: 15px;
   font-weight: 400;
 }
-.renderWhatDoData>div>p{
+.renderWhatDoData > div > p {
   font-size: 14px;
   font-weight: 400;
   color: #8d8f92;
+  line-height: 23px;
+  word-spacing: 3px;
   margin-bottom: 10px;
 }
 
 /* Waht we Do CSS start here... */
 
 /* Features section CSS start here... */
-
-
+.featuresWorkHomeCont {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #3a454d;
+  /* height: 750px; */
+}
+.featuresWorkHome {
+  width: 65%;
+  /* border: 1px solid #fff; */
+  margin: auto;
+  padding-top: 75px;
+}
+.renderFeaturesImg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.renderFeaturesImg > div {
+  margin-top: 60px;
+  /* border: 1px solid red; */
+}
+.renderFeaturesImg > div > img {
+  width: 100%;
+}
+.renderFeaturesImg > div > h4 {
+  font-size: 16px;
+  font-weight: 300;
+  color: #e1e6ea;
+  margin: 25px 0;
+  line-height: 23px;
+  word-spacing: 3px;
+}
+.renderFeaturesImg > div > p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #c8cdd0;
+  margin: 30px 0;
+  line-height: 21px;
+  word-spacing: 2px;
+  padding-bottom: 30px;
+}
 
 /* Features section CSS start here... */
+
+/* Stay in Touch section CSS start here... */
+
+.stayVerticalLine {
+  margin-left: 17.6%;
+  height: 24px;
+  width: 7px;
+  background-color: #c8cdd0;
+  color: #c8cdd0;
+  float: left;
+  margin-right: 14px;
+}
+.stay_heading {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 27px;
+  margin-bottom: 27px;
+  color: #292f36;
+}
+
+.contactDiv {
+  /* border: 1px solid black; */
+  width: 580px;
+  height: 232px;
+  margin: 35px;
+  margin-left: 17.6%;
+}
+.contactDiv > h5 {
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.contactDiv > p {
+  font-size: 14px;
+  line-height: 23px;
+  word-spacing: 3px;
+  margin: 35px 0;
+  color: #8d8f92;
+}
+
+/* Footerbar CSS start here... */
+
+.footerBar {
+  background-color: #3a454d;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 100%;
+  height: 90px;
+}
+
+.leftSideFooter > p {
+  margin-top: 40px;
+  color: #c8cdd0;
+}
+.fa{
+  margin-top: 40px;
+  color: #fff;
+  height: 50px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+/* Footerbar CSS end here... */

@@ -114,6 +114,26 @@ const wahtWeDo = [
       "Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas",
   },
 ];
+const features = [
+  {
+    image: "https://i.ibb.co/8MTvjXt/features-Img1.jpg",
+    name: "PRODUCT DESIGN: EAMES CHAIRS",
+    about:
+      "Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames.",
+  },
+  {
+    image: "https://i.ibb.co/8MTvjXt/features-Img1.jpg",
+    name: "ELEGANT AND COLORFULLOGOS",
+    about:
+      "Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames.",
+  },
+  {
+    image: "https://i.ibb.co/8MTvjXt/features-Img1.jpg",
+    name: "A SHOWCASE OF CREATIVE",
+    about:
+      "Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames.",
+  },
+];
 
 let Social_i_cont = document.querySelector(".Social_i_cont");
 const displaySocialIcon = () => {
@@ -171,7 +191,6 @@ const displayLovilyWork = () => {
 };
 displayLovilyWork();
 
-
 let renderWhatDoData = document.querySelector(".renderWhatDoData");
 const displayWhatWeDo = () => {
   wahtWeDo.map((el) => {
@@ -190,3 +209,21 @@ const displayWhatWeDo = () => {
 };
 
 displayWhatWeDo();
+
+let renderFeaturesImg = document.querySelector(".renderFeaturesImg");
+const displayFeatures = () => {
+  features.map((el) => {
+    let imgDiv = document.createElement("div");
+    let h4 = document.createElement("h4");
+    let img = document.createElement("img");
+    let p = document.createElement("p");
+
+    h4.textContent = el.name;
+    img.src = el.image;
+    p.textContent = el.about;
+
+    imgDiv.append(img, h4, p);
+    renderFeaturesImg.append(imgDiv);
+  });
+};
+displayFeatures();
