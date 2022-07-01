@@ -101,12 +101,19 @@
 /* MODEST CSS start here...  */
 
 .modestPart {
-  border: 1px solid;
   width: 65%;
-  height: 534px;
-  margin: 60px auto;
+  height: 400px;
+  margin: auto;
+  margin-top: 70px;
 }
 .horiLine {
+  margin-top: 0;
+  width: 100%;
+  margin: auto;
+  height: 1px;
+  background-color: #c8cdd0;
+}
+.verticalLine {
   height: 24px;
   border: 4px solid #c8cdd0;
   color: #c8cdd0;
@@ -119,24 +126,106 @@
   font-weight: 600;
   color: #292f36;
 }
-.modest_container{
+.modest_container {
   display: flex;
   gap: 20px;
-  margin:30px auto;
+  margin: 30px auto;
 }
-.leftSide{
+.leftSide {
   color: #8d8f92;
   font-size: 14px;
   flex: 3;
   font-weight: 300;
 }
-.leftSide>p{
-  /* margin: 20px 0; */
+.leftSide > p {
   margin-bottom: 30px;
 }
-.rightSide{
+.rightSide {
   flex: 2;
+}
+.modestBox {
   display: flex;
 }
-
+.numBox {
+  color: #fff;
+  align-items: center;
+  padding: 0 15px;
+  border: none;
+  margin-bottom: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #23b7a4;
+}
+.modestBox > div > h3 {
+  color: #292f36;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+.modestBox > div > p {
+  font-size: 14px;
+  color: #8d8f92;
+  font-weight: 300;
+  margin: 10px 15px;
+}
+.Social_i_cont {
+  display: flex;
+  gap: 2px;
+}
+.Social_i_cont > div {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  position: relative;
+  background-color: #c8cdd0;
+}
+.Social_i_cont > div > img {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #c8cdd0;
+}
 /* MODEST CSS end here...  */
+
+/* MEET TEAM CSS start here... */
+.meetTeamHome {
+  /* border: 1px solid black; */
+  height: 450px;
+  width: 65%;
+  margin: auto;
+  margin-top: 70px;
+}
+.homeAvatarDiv {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+.homeAvatarDiv > div {
+  /* border: 1px solid red; */
+}
+
+.teamImgDiv > img {
+  width: 100%;
+  object-fit: contain;
+}
+.teamAboutDiv{
+  margin-top: -4px;
+  background-color: #e1e6ea;
+  padding: 15px;
+}
+.teamAboutDiv>h4{
+  font-size: 14px;
+  margin-bottom: 4px;
+  font-weight: 400;
+}
+.teamAboutDiv>h5{
+  font-size: 13px;
+  font-weight: 400;
+}
+/* MEET TEAM CSS end here... */
