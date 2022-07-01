@@ -115,7 +115,9 @@
 }
 .verticalLine {
   height: 24px;
-  border: 4px solid #c8cdd0;
+  /* border: 4px solid #c8cdd0; */
+  width: 7px;
+  background-color: #c8cdd0;
   color: #c8cdd0;
   float: left;
   margin-right: 14px;
@@ -214,18 +216,131 @@
   width: 100%;
   object-fit: contain;
 }
-.teamAboutDiv{
+.teamAboutDiv {
   margin-top: -4px;
   background-color: #e1e6ea;
   padding: 15px;
 }
-.teamAboutDiv>h4{
+.teamAboutDiv > h4 {
   font-size: 14px;
   margin-bottom: 4px;
   font-weight: 400;
 }
-.teamAboutDiv>h5{
+.teamAboutDiv > h5 {
   font-size: 13px;
   font-weight: 400;
 }
 /* MEET TEAM CSS end here... */
+
+/* LOVELY WORK CSS start here... */
+
+.lovelyWorkHomeCont {
+  width: 100%;
+  background-color: #3a454d;
+  height: 750px;
+}
+.lovelyWorkHome {
+  width: 65%;
+  /* border: 1px solid #fff; */
+  margin: auto;
+  padding-top: 60px;
+  /* height: 500px; */
+}
+.renderLovelyImg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+.renderLovelyImg>div{
+  position: relative;
+}
+.lovelyImage {
+  width: 100%;
+}
+.LovelyVerticalLine {
+  height: 24px;
+  width: 7px;
+  background-color: #c8cdd0;
+  color: #4e5a62;
+  float: left;
+  margin-right: 14px;
+  margin-top: 2px;
+}
+.lovely_heading {
+  font-size: 25px;
+  font-weight: 600;
+  color: #e1e6ea;
+}
+.lovelyWorkText {
+  position: absolute;
+  bottom: 0;
+  padding: 17px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #292f36;
+
+  color: #e1e6ea;
+}
+.showMeMoreBtn{
+  /* text-align: center;
+   */
+   margin-left: 42%;
+   margin-right: 42%;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   padding: 10px 15px;
+   border-radius: 5px;
+   border: 2px solid #e1e6ea;
+   background-color: transparent;
+   color: #e1e6ea;
+   cursor: pointer;
+}
+/* LOVELY WORK CSS end here... */
+
+
+/* Waht we Do CSS start here... */
+
+.whatWeDoHome{
+  padding-top: 60px;
+  width: 65%;
+  /* border: 1px solid black; */
+  margin: auto;
+  height: 600px;
+}
+.renderWhatDoData{
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+
+}
+.renderWhatDoData>div{
+  border: 1px solid;
+  text-align: center;
+}
+.renderWhatDoData>div>img{
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+}
+.renderWhatDoData>div>h4{
+  font-size: 14px;
+  margin: 15px;
+  font-weight: 400;
+}
+.renderWhatDoData>div>p{
+  font-size: 14px;
+  font-weight: 400;
+  color: #8d8f92;
+  margin-bottom: 10px;
+}
+
+/* Waht we Do CSS start here... */
+
+/* Features section CSS start here... */
+
+
+
+/* Features section CSS start here... */

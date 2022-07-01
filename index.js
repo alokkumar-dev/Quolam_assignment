@@ -1,9 +1,9 @@
 const social_icons = [
-  "https://toppng.com/uploads/preview/facebook-logo-white-white-facebook-f-logo-115628618682gxdsl4yn5.png",
-  "https://www.pinclipart.com/picdir/middle/356-3561356_facebook-logo-twitter-logo-twitter-icon-white-transparent.png",
-  "https://www.pinclipart.com/picdir/middle/356-3561356_facebook-logo-twitter-logo-twitter-icon-white-transparent.png",
-  "https://www.pinclipart.com/picdir/middle/356-3561356_facebook-logo-twitter-logo-twitter-icon-white-transparent.png",
-  "https://www.pinclipart.com/picdir/middle/356-3561356_facebook-logo-twitter-logo-twitter-icon-white-transparent.png",
+  "https://toppng.com/uploads/preview/facebook-image-white-white-facebook-f-image-115628618682gxdsl4yn5.png",
+  "https://www.pinclipart.com/picdir/middle/356-3561356_facebook-image-twitter-image-twitter-icon-white-transparent.png",
+  "https://www.pinclipart.com/picdir/middle/356-3561356_facebook-image-twitter-image-twitter-icon-white-transparent.png",
+  "https://www.pinclipart.com/picdir/middle/356-3561356_facebook-image-twitter-image-twitter-icon-white-transparent.png",
+  "https://www.pinclipart.com/picdir/middle/356-3561356_facebook-image-twitter-image-twitter-icon-white-transparent.png",
 ];
 
 const team = [
@@ -29,6 +29,92 @@ const team = [
   },
 ];
 
+const lovelyWork = [
+  {
+    image: "https://i.ibb.co/vkkwNjL/lovily-Img3.jpg",
+    text: "PARTNERSHIP GULDLINES",
+  },
+  {
+    image: "https://i.ibb.co/vkkwNjL/lovily-Img3.jpg",
+    text: "PARTNERSHIP GULDLINES",
+  },
+  {
+    image: "https://i.ibb.co/vkkwNjL/lovily-Img3.jpg",
+    text: "PARTNERSHIP GULDLINES",
+  },
+  {
+    image: "https://i.ibb.co/vkkwNjL/lovily-Img3.jpg",
+    text: "PARTNERSHIP GULDLINES",
+  },
+  {
+    image: "https://i.ibb.co/vkkwNjL/lovily-Img3.jpg",
+    text: "PARTNERSHIP GULDLINES",
+  },
+  {
+    image: "https://i.ibb.co/vkkwNjL/lovily-Img3.jpg",
+    text: "PARTNERSHIP GULDLINES",
+  },
+];
+
+const wahtWeDo = [
+  {
+    image:
+      "https://icons.iconarchive.com/icons/double-j-design/ravenna-3d/256/Settings-icon.png",
+    name: "EASY THEME SETUP",
+    about:
+      "Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas",
+  },
+  {
+    image:
+      "https://icons.iconarchive.com/icons/double-j-design/ravenna-3d/256/Settings-icon.png",
+    name: "EASY THEME SETUP",
+    about:
+      "Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas",
+  },
+  {
+    image:
+      "https://icons.iconarchive.com/icons/double-j-design/ravenna-3d/256/Settings-icon.png",
+    name: "EASY THEME SETUP",
+    about:
+      "Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas",
+  },
+  {
+    image:
+      "https://icons.iconarchive.com/icons/double-j-design/ravenna-3d/256/Settings-icon.png",
+    name: "EASY THEME SETUP",
+    about:
+      "Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas",
+  },
+  {
+    image:
+      "https://icons.iconarchive.com/icons/double-j-design/ravenna-3d/256/Settings-icon.png",
+    name: "EASY THEME SETUP",
+    about:
+      "Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas",
+  },
+  {
+    image:
+      "https://icons.iconarchive.com/icons/double-j-design/ravenna-3d/256/Settings-icon.png",
+    name: "EASY THEME SETUP",
+    about:
+      "Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas",
+  },
+  {
+    image:
+      "https://icons.iconarchive.com/icons/double-j-design/ravenna-3d/256/Settings-icon.png",
+    name: "EASY THEME SETUP",
+    about:
+      "Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas",
+  },
+  {
+    image:
+      "https://icons.iconarchive.com/icons/double-j-design/ravenna-3d/256/Settings-icon.png",
+    name: "EASY THEME SETUP",
+    about:
+      "Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas",
+  },
+];
+
 let Social_i_cont = document.querySelector(".Social_i_cont");
 const displaySocialIcon = () => {
   social_icons.map((el) => {
@@ -40,7 +126,6 @@ const displaySocialIcon = () => {
   });
 };
 displaySocialIcon();
-
 
 let homeAvatarDiv = document.querySelector(".homeAvatarDiv");
 const displayTeam = () => {
@@ -55,16 +140,53 @@ const displayTeam = () => {
     aboutDiv.setAttribute("class", "teamAboutDiv");
     imgDiv.setAttribute("class", "teamImgDiv");
 
-
     img.src = el.avatar;
     name.textContent = el.name;
     position.textContent = el.position;
 
     imgDiv.append(img);
-    aboutDiv.append(name,position);
+    aboutDiv.append(name, position);
     teamMainBox.append(imgDiv, aboutDiv);
     homeAvatarDiv.append(teamMainBox);
   });
 };
 
 displayTeam();
+
+let renderLovelyImg = document.querySelector(".renderLovelyImg");
+const displayLovilyWork = () => {
+  lovelyWork.map((el) => {
+    let imgDiv = document.createElement("div");
+    let img = document.createElement("img");
+    let h4 = document.createElement("h4");
+
+    // imgDiv.setAttribute("class", "lovelyImgDiv")
+    img.setAttribute("class", "lovelyImage");
+    h4.setAttribute("class", "lovelyWorkText");
+    img.src = el.image;
+    h4.textContent = el.text;
+    imgDiv.append(img, h4);
+    renderLovelyImg.append(imgDiv);
+  });
+};
+displayLovilyWork();
+
+
+let renderWhatDoData = document.querySelector(".renderWhatDoData");
+const displayWhatWeDo = () => {
+  wahtWeDo.map((el) => {
+    let imgDiv = document.createElement("div");
+    let h4 = document.createElement("h4");
+    let img = document.createElement("img");
+    let p = document.createElement("p");
+
+    h4.textContent = el.name;
+    img.src = el.image;
+    p.textContent = el.about;
+
+    imgDiv.append(img, h4, p);
+    renderWhatDoData.append(imgDiv);
+  });
+};
+
+displayWhatWeDo();
