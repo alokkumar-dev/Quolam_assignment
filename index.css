@@ -77,10 +77,9 @@
   position: absolute;
   margin: auto;
   top: 0;
-  height: fit-content;
-  right: 0;
   bottom: 0;
-  left: 0;
+  left: 270px;
+  height: fit-content;
 }
 .carouselUpperDiv > p {
   color: #ccd0d7;
@@ -98,3 +97,46 @@
   background-color: #23b7a3;
   border: 2px solid #23b7a3;
 }
+
+/* MODEST CSS start here...  */
+
+.modestPart {
+  border: 1px solid;
+  width: 65%;
+  height: 534px;
+  margin: 60px auto;
+}
+.horiLine {
+  height: 24px;
+  border: 4px solid #c8cdd0;
+  color: #c8cdd0;
+  float: left;
+  margin-right: 14px;
+  margin-top: 2px;
+}
+.modest_heading {
+  font-size: 25px;
+  font-weight: 600;
+  color: #292f36;
+}
+.modest_container{
+  display: flex;
+  gap: 20px;
+  margin:30px auto;
+}
+.leftSide{
+  color: #8d8f92;
+  font-size: 14px;
+  flex: 3;
+  font-weight: 300;
+}
+.leftSide>p{
+  /* margin: 20px 0; */
+  margin-bottom: 30px;
+}
+.rightSide{
+  flex: 2;
+  display: flex;
+}
+
+/* MODEST CSS end here...  */
