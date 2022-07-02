@@ -217,6 +217,9 @@
 .teamAboutDiv {
   z-index: 3;
 }
+.teamImgDiv {
+  position: relative;
+}
 .teamImgDiv > img {
   width: 100%;
   object-fit: contain;
@@ -225,15 +228,33 @@
   z-index: 4;
   margin-top: 0;
   border: 1px solid red;
-  /* height: inherit;
-  width: inherit; */
+  height: 100%;
+  width: 100%;
   position: relative;
-
-  /* top: 5;
-  right: 5;
-  bottom: 5;
-  left: 5; */
+  background-color: #d3d4d658;
   margin: auto;
+}
+.teamIiconsDiv{
+  position: absolute;
+  /* border: 2px solid red; */
+  height:auto;
+  width: fit-content;
+ margin: 50% 17%;
+}
+.teamIiconsDiv>a{
+  margin-top: 0;
+  font-size: 20px;
+  height: 42px;
+  width: 42px;
+  padding: 10px 10px;
+  background-color: #3b454e;
+  /* border: 1px solid blue; */
+}
+.teamIiconsDiv>.fa-facebook,.teamIiconsDiv>.fa-linkedin{
+  margin-left: -13px;
+}
+.teamIiconsDiv>a:hover{
+  background-color: #4d5a62;
 }
 .teamAboutDiv {
   margin-top: -4px;
@@ -414,7 +435,7 @@
 /* Features section CSS start here... */
 
 /* Stay in Touch section CSS start here... */
-.stayTouchHome{
+.stayTouchHome {
   margin-top: 50px;
 }
 .stayVerticalLine {
@@ -433,7 +454,7 @@
   margin-bottom: 27px;
   color: #292f36;
 }
-.stayTouchData{
+.stayTouchData {
   height: 350px;
   position: relative;
 }
@@ -475,7 +496,7 @@
   padding-top: 20px;
   padding-bottom: 10px;
 }
-.sendMessageDiv>button{
+.sendMessageDiv > button {
   font-size: 14px;
   background-color: #0bab95;
   color: #fff;
@@ -506,7 +527,6 @@
   margin: 35px 0;
   color: #8d8f92;
 }
-
 
 /* Footerbar CSS start here... */
 

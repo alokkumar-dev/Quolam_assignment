@@ -128,8 +128,6 @@ const features = [
   },
 ];
 
-
-
 let homeAvatarDiv = document.querySelector(".homeAvatarDiv");
 const displayTeam = () => {
   team.map((el) => {
@@ -141,13 +139,26 @@ const displayTeam = () => {
     let position = document.createElement("h5");
     // let h1 = document.createElement("h1");
     let hoverDiv = document.createElement("div");
-    hoverDiv.textContent = "Alok Kumar";
+    let iconsDiv = document.createElement("div");
 
+    iconsDiv.setAttribute("class", "iconsDiv");
+    
+    let icon1 = document.createElement("img");
+    let icon2 = document.createElement("img");
+    let icon3 = document.createElement("img");
+    
+    iconsDiv.append(icon1,icon2,icon3);
+
+    icon1.src = "https://i.ibb.co/wSD3HqF/twitter.png";;
+    icon2.src = "https://i.ibb.co/5FGWQXH/facebook.png";
+    icon3.src= "https://i.ibb.co/BypD9hR/linkedin.png";
+
+    
     hoverDiv.setAttribute("class", "teamHoverDiv");
+    hoverDiv.append(iconsDiv);
 
     aboutDiv.setAttribute("class", "teamAboutDiv");
     imgDiv.setAttribute("class", "teamImgDiv");
-    // teamMainBox.setAttribute("class", "teamRendomHover")
     teamMainBox.onmouseover = ()=>{
       aboutDiv.style.backgroundColor = "#3a454d";
       name.style.color = "white"
@@ -166,15 +177,15 @@ const displayTeam = () => {
     name.textContent = el.name;
     position.textContent = el.position;
 
-    imgDiv.append(img);
+    imgDiv.append(hoverDiv,img);
     aboutDiv.append(name, position);
-    teamMainBox.append(hoverDiv,imgDiv, aboutDiv);
+    teamMainBox.append(imgDiv, aboutDiv);
     homeAvatarDiv.append(teamMainBox);
   });
 };
 
 
-displayTeam();
+// displayTeam();
 
 let renderLovelyImg = document.querySelector(".renderLovelyImg");
 const displayLovilyWork = () => {
