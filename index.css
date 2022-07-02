@@ -207,7 +207,7 @@
 .homeAvatarDiv {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 40px;
   margin-top: 50px;
 }
 .homeAvatarDiv > div {
@@ -267,7 +267,7 @@
 .renderLovelyImg {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 50px;
   margin-top: 50px;
 }
 .renderLovelyImg > div {
@@ -281,6 +281,11 @@
   position: absolute;
   background-color: #5f5b5b59;
   display: none;
+  /* margin: auto; */
+  text-align: center;
+  padding-top: 90px;
+  color: #fff;
+  font-size: 25px;
 }
 .lovelyImage {
   width: 100%;
@@ -340,14 +345,13 @@
   gap: 30px;
 }
 .renderWhatDoData > div {
-  border: 1px solid;
   text-align: center;
   /* margin-bottom: 30px; */
 }
 .renderWhatDoData > div > img {
   margin-top: 10px;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
 }
 .renderWhatDoData > div > h4 {
   font-size: 14px;
@@ -367,7 +371,7 @@
 
 /* Features section CSS start here... */
 .featuresWorkHomeCont {
-  margin-top: 50px;
+  margin-top: 150px;
   width: 100%;
   background-color: #3a454d;
   /* height: 750px; */

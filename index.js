@@ -24,7 +24,11 @@ const team = [
 
 const lovelyWork = [
   {
-    image: "https://i.ibb.co/vkkwNjL/lovily-Img3.jpg",
+    image: "https://i.ibb.co/936PZ6x/lovely-Img1.jpg",
+    text: "PARTNERSHIP GULDLINES",
+  },
+  {
+    image: "https://i.ibb.co/Fs63XLC/lovely-Img2.jpg",
     text: "PARTNERSHIP GULDLINES",
   },
   {
@@ -32,19 +36,15 @@ const lovelyWork = [
     text: "PARTNERSHIP GULDLINES",
   },
   {
-    image: "https://i.ibb.co/vkkwNjL/lovily-Img3.jpg",
+    image: "https://i.ibb.co/W632TTm/lovely-Img4.jpg",
     text: "PARTNERSHIP GULDLINES",
   },
   {
-    image: "https://i.ibb.co/vkkwNjL/lovily-Img3.jpg",
+    image: "https://i.ibb.co/Q9Jt8ng/lovely-Img5.jpg",
     text: "PARTNERSHIP GULDLINES",
   },
   {
-    image: "https://i.ibb.co/vkkwNjL/lovily-Img3.jpg",
-    text: "PARTNERSHIP GULDLINES",
-  },
-  {
-    image: "https://i.ibb.co/vkkwNjL/lovily-Img3.jpg",
+    image: "https://i.ibb.co/kVnPXkw/lovely-Img6.jpg",
     text: "PARTNERSHIP GULDLINES",
   },
 ];
@@ -52,7 +52,21 @@ const lovelyWork = [
 const wahtWeDo = [
   {
     image:
-      "https://icons.iconarchive.com/icons/double-j-design/ravenna-3d/256/Settings-icon.png",
+      "https://i.ibb.co/RH4kC07/setting-Icon.jpg",
+    name: "EASY THEME SETUP",
+    about:
+      "Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas",
+  },
+  {
+    image:
+      "https://i.ibb.co/h9Rc66G/pancel-Icon.jpg",
+    name: "EASY THEME SETUP",
+    about:
+      "Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas",
+  },
+  {
+    image:
+      "https://i.ibb.co/b11n1pw/phone-Icon.jpg",
     name: "EASY THEME SETUP",
     about:
       "Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas",
@@ -66,35 +80,21 @@ const wahtWeDo = [
   },
   {
     image:
-      "https://icons.iconarchive.com/icons/double-j-design/ravenna-3d/256/Settings-icon.png",
+      "https://i.ibb.co/RH4kC07/setting-Icon.jpg",
     name: "EASY THEME SETUP",
     about:
       "Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas",
   },
   {
     image:
-      "https://icons.iconarchive.com/icons/double-j-design/ravenna-3d/256/Settings-icon.png",
+      "https://i.ibb.co/h9Rc66G/pancel-Icon.jpg",
     name: "EASY THEME SETUP",
     about:
       "Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas",
   },
   {
     image:
-      "https://icons.iconarchive.com/icons/double-j-design/ravenna-3d/256/Settings-icon.png",
-    name: "EASY THEME SETUP",
-    about:
-      "Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas",
-  },
-  {
-    image:
-      "https://icons.iconarchive.com/icons/double-j-design/ravenna-3d/256/Settings-icon.png",
-    name: "EASY THEME SETUP",
-    about:
-      "Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas",
-  },
-  {
-    image:
-      "https://icons.iconarchive.com/icons/double-j-design/ravenna-3d/256/Settings-icon.png",
+      "https://i.ibb.co/b11n1pw/phone-Icon.jpg",
     name: "EASY THEME SETUP",
     about:
       "Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas",
@@ -115,13 +115,13 @@ const features = [
       "Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames.",
   },
   {
-    image: "https://i.ibb.co/8MTvjXt/features-Img1.jpg",
+    image: "https://i.ibb.co/Q8wgRHC/features-Img2.jpg",
     name: "ELEGANT AND COLORFULLOGOS",
     about:
       "Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames.",
   },
   {
-    image: "https://i.ibb.co/8MTvjXt/features-Img1.jpg",
+    image: "https://i.ibb.co/8g5Ffpj/features-Img3.jpg",
     name: "A SHOWCASE OF CREATIVE",
     about:
       "Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames.",
@@ -185,6 +185,7 @@ const displayLovilyWork = () => {
 
     let div = document.createElement("div");
     div.setAttribute("class", "lovelyImgHoverDiv");
+    div.innerHTML = "✚"
     imgDiv.onmouseover = ()=>{
       h4.style.backgroundColor = "#1d1e1f"
       h4.style.color = "#fff"
