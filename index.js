@@ -6,17 +6,17 @@ const team = [
     position: "CEO and Founder",
   },
   {
-    avatar: "https://i.ibb.co/bbG7M0T/Man1.png",
+    avatar: "https://i.ibb.co/VqLXQjB/man2.jpg",
     name: "PAUL TORRES",
     position: "Head of Development",
   },
   {
-    avatar: "https://i.ibb.co/bbG7M0T/Man1.png",
+    avatar: "https://i.ibb.co/6X4z6zz/women.jpg",
     name: "JUDITH GILLETTE",
     position: "Graphic Desinger",
   },
   {
-    avatar: "https://i.ibb.co/bbG7M0T/Man1.png",
+    avatar: "https://i.ibb.co/VqLXQjB/man2.jpg",
     name: "DELORES REED",
     position: "Client Service Director",
   },
@@ -24,7 +24,7 @@ const team = [
 
 const lovelyWork = [
   {
-    image: "https://i.ibb.co/936PZ6x/lovely-Img1.jpg",
+    image: "https://i.ibb.co/sHfcSH5/lovely-Img1.jpg",
     text: "PARTNERSHIP GULDLINES",
   },
   {
@@ -73,7 +73,7 @@ const wahtWeDo = [
   },
   {
     image:
-      "https://icons.iconarchive.com/icons/double-j-design/ravenna-3d/256/Settings-icon.png",
+      "https://i.ibb.co/s1YKx7R/whach-Icon.jpg",
     name: "EASY THEME SETUP",
     about:
       "Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas",
@@ -101,7 +101,7 @@ const wahtWeDo = [
   },
   {
     image:
-      "https://icons.iconarchive.com/icons/double-j-design/ravenna-3d/256/Settings-icon.png",
+      "https://i.ibb.co/s1YKx7R/whach-Icon.jpg",
     name: "EASY THEME SETUP",
     about:
       "Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas",

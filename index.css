@@ -267,7 +267,7 @@
 .renderLovelyImg {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 30px;
   margin-top: 50px;
 }
 .renderLovelyImg > div {
@@ -281,7 +281,6 @@
   position: absolute;
   background-color: #5f5b5b59;
   display: none;
-  /* margin: auto; */
   text-align: center;
   padding-top: 90px;
   color: #fff;
@@ -437,7 +436,6 @@
 .stayTouchData{
   height: 350px;
   position: relative;
-  border: 1px solid red;
 }
 /* Send message CSS start here... */
 
@@ -459,6 +457,7 @@
 .imputDivs > input {
   height: 40px;
   width: 48%;
+  font-size: 18px;
   background-color: #e2e4e5;
   border: none;
 }
@@ -470,6 +469,7 @@
   height: 120px;
   background-color: #e2e4e5;
   border: none;
+  font-size: 18px;
 }
 .yourMessageText {
   padding-top: 20px;
@@ -477,12 +477,13 @@
 }
 .sendMessageDiv>button{
   font-size: 14px;
-  background-color: #06917f;
+  background-color: #0bab95;
   color: #fff;
-  padding: 15px 10px;
+  padding: 15px 20px;
   border: none;
   margin-top: 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 /* Send messsage CSS end here... */
 .contactDiv {
