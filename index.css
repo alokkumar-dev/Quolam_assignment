@@ -274,7 +274,7 @@
   position: relative;
   cursor: pointer;
 }
-.lovelyImgHoverDiv{
+.lovelyImgHoverDiv {
   height: 77%;
   width: 100%;
   z-index: 6;
@@ -415,7 +415,9 @@
 /* Features section CSS start here... */
 
 /* Stay in Touch section CSS start here... */
-
+.stayTouchHome{
+  margin-top: 50px;
+}
 .stayVerticalLine {
   margin-left: 17.6%;
   height: 24px;
@@ -432,12 +434,63 @@
   margin-bottom: 27px;
   color: #292f36;
 }
+.stayTouchData{
+  height: 350px;
+  position: relative;
+  border: 1px solid red;
+}
+/* Send message CSS start here... */
 
+.sendMessageDiv {
+  position: absolute;
+  width: 450px;
+  color: #5a6068;
+  padding: 25px;
+  margin-left: 57%;
+  margin-top: -120px;
+  background-color: #fff;
+}
+.fieldNames {
+  display: flex;
+  width: 100%;
+  gap: 130px;
+  padding-bottom: 10px;
+}
+.imputDivs > input {
+  height: 40px;
+  width: 48%;
+  background-color: #e2e4e5;
+  border: none;
+}
+.email {
+  margin-left: 10px;
+}
+.messageField {
+  width: 100%;
+  height: 120px;
+  background-color: #e2e4e5;
+  border: none;
+}
+.yourMessageText {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.sendMessageDiv>button{
+  font-size: 14px;
+  background-color: #06917f;
+  color: #fff;
+  padding: 15px 10px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+/* Send messsage CSS end here... */
 .contactDiv {
   /* border: 1px solid black; */
   width: 580px;
   height: 232px;
   margin: 35px;
+  margin-top: 60px;
   margin-left: 17.6%;
 }
 .contactDiv > h5 {
@@ -452,6 +505,7 @@
   margin: 35px 0;
   color: #8d8f92;
 }
+
 
 /* Footerbar CSS start here... */
 
