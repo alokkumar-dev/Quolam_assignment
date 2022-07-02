@@ -1,10 +1,3 @@
-const social_icons = [
-  "https://toppng.com/uploads/preview/facebook-image-white-white-facebook-f-image-115628618682gxdsl4yn5.png",
-  "https://www.pinclipart.com/picdir/middle/356-3561356_facebook-image-twitter-image-twitter-icon-white-transparent.png",
-  "https://www.pinclipart.com/picdir/middle/356-3561356_facebook-image-twitter-image-twitter-icon-white-transparent.png",
-  "https://www.pinclipart.com/picdir/middle/356-3561356_facebook-image-twitter-image-twitter-icon-white-transparent.png",
-  "https://www.pinclipart.com/picdir/middle/356-3561356_facebook-image-twitter-image-twitter-icon-white-transparent.png",
-];
 
 const team = [
   {
@@ -135,17 +128,7 @@ const features = [
   },
 ];
 
-let Social_i_cont = document.querySelector(".Social_i_cont");
-const displaySocialIcon = () => {
-  social_icons.map((el) => {
-    let imgDiv = document.createElement("div");
-    let img = document.createElement("img");
-    img.src = el;
-    imgDiv.append(img);
-    Social_i_cont.append(imgDiv);
-  });
-};
-displaySocialIcon();
+
 
 let homeAvatarDiv = document.querySelector(".homeAvatarDiv");
 const displayTeam = () => {
@@ -156,9 +139,28 @@ const displayTeam = () => {
     let img = document.createElement("img");
     let name = document.createElement("h4");
     let position = document.createElement("h5");
+    // let h1 = document.createElement("h1");
+    let hoverDiv = document.createElement("div");
+    hoverDiv.textContent = "Alok Kumar";
+
+    hoverDiv.setAttribute("class", "teamHoverDiv");
 
     aboutDiv.setAttribute("class", "teamAboutDiv");
     imgDiv.setAttribute("class", "teamImgDiv");
+    // teamMainBox.setAttribute("class", "teamRendomHover")
+    teamMainBox.onmouseover = ()=>{
+      aboutDiv.style.backgroundColor = "#3a454d";
+      name.style.color = "white"
+      position.style.color = "white"
+
+    }
+    teamMainBox.onmouseout = ()=>{
+      aboutDiv.style.backgroundColor = "#e1e6ea"
+      name.style.color = "black"
+      position.style.color = "black"
+
+    }
+    
 
     img.src = el.avatar;
     name.textContent = el.name;
@@ -166,10 +168,11 @@ const displayTeam = () => {
 
     imgDiv.append(img);
     aboutDiv.append(name, position);
-    teamMainBox.append(imgDiv, aboutDiv);
+    teamMainBox.append(hoverDiv,imgDiv, aboutDiv);
     homeAvatarDiv.append(teamMainBox);
   });
 };
+
 
 displayTeam();
 
@@ -180,12 +183,27 @@ const displayLovilyWork = () => {
     let img = document.createElement("img");
     let h4 = document.createElement("h4");
 
-    // imgDiv.setAttribute("class", "lovelyImgDiv")
+    let div = document.createElement("div");
+    div.setAttribute("class", "lovelyImgHoverDiv");
+    imgDiv.onmouseover = ()=>{
+      h4.style.backgroundColor = "#1d1e1f"
+      h4.style.color = "#fff"
+      div.style.display = "block";
+      h4.style.display = "block";
+
+    }
+    imgDiv.onmouseout = ()=>{
+      h4.style.background = "none"
+      div.style.display = "none";
+      h4.style.display = "none";
+    }
+
+
     img.setAttribute("class", "lovelyImage");
     h4.setAttribute("class", "lovelyWorkText");
     img.src = el.image;
     h4.textContent = el.text;
-    imgDiv.append(img, h4);
+    imgDiv.append(div,img, h4);
     renderLovelyImg.append(imgDiv);
   });
 };

@@ -172,34 +172,28 @@
 .modestBox > div > p {
   font-size: 14px;
   color: #8d8f92;
-  /* color: red; */
   font-weight: 300;
   margin: 10px 15px;
   line-height: 23px;
   word-spacing: 3px;
 }
-.Social_i_cont {
+.iconsForModest {
   display: flex;
-  gap: 2px;
+  margin-left: 6px;
 }
-.Social_i_cont > div {
-  width: 60px;
+
+.iconsForModest > .fa {
   height: 60px;
-  padding: 5px;
-  position: relative;
+  padding: 20px 22px;
+  font-size: 22px;
+  margin-left: -6px;
   background-color: #c8cdd0;
 }
-.Social_i_cont > div > img {
-  height: 50%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-  background-color: #c8cdd0;
+.iconsForModest > .fa:hover {
+  background-color: #b5b5b6;
+  /* color: #9ebbc269; */
 }
+
 /* MODEST CSS end here...  */
 
 /* MEET TEAM CSS start here... */
@@ -217,12 +211,29 @@
   margin-top: 50px;
 }
 .homeAvatarDiv > div {
-  /* border: 1px solid red; */
+  cursor: pointer;
 }
 
+.teamAboutDiv {
+  z-index: 3;
+}
 .teamImgDiv > img {
   width: 100%;
   object-fit: contain;
+}
+.teamHoverDiv {
+  z-index: 4;
+  margin-top: 0;
+  border: 1px solid red;
+  /* height: inherit;
+  width: inherit; */
+  position: relative;
+
+  /* top: 5;
+  right: 5;
+  bottom: 5;
+  left: 5; */
+  margin: auto;
 }
 .teamAboutDiv {
   margin-top: -4px;
@@ -245,14 +256,13 @@
 .lovelyWorkHomeCont {
   width: 100%;
   background-color: #3a454d;
-  height: 750px;
+  margin-top: 60px;
 }
 .lovelyWorkHome {
   width: 65%;
   /* border: 1px solid #fff; */
   margin: auto;
   padding-top: 60px;
-  /* height: 500px; */
 }
 .renderLovelyImg {
   display: grid;
@@ -262,6 +272,15 @@
 }
 .renderLovelyImg > div {
   position: relative;
+  cursor: pointer;
+}
+.lovelyImgHoverDiv{
+  height: 77%;
+  width: 100%;
+  z-index: 6;
+  position: absolute;
+  background-color: #5f5b5b59;
+  display: none;
 }
 .lovelyImage {
   width: 100%;
@@ -288,7 +307,7 @@
   font-size: 16px;
   font-weight: 300;
   background-color: #292f36;
-
+  display: none;
   color: #e1e6ea;
 }
 .showMeMoreBtn {
@@ -445,7 +464,7 @@
   margin-top: 40px;
   color: #c8cdd0;
 }
-.fa{
+.fa {
   margin-top: 40px;
   color: #fff;
   height: 50px;
