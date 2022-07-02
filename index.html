@@ -15,22 +15,22 @@
     <nav class="navbar">
       <div>
         <div class="companyName">
-          <a href="#">MOUDEST.</a>
+          <img src="./images/modestLogo.png" alt="modistlogo" />
         </div>
 
         <div class="navBtns">
-          <a href="#" class="home">HOME</a>
-          <a href="#" class="about">ABOUT</a>
-          <a href="#" class="work">WORK</a>
-          <a href="#" class="team">TEAM</a>
-          <a href="#" class="services">SERVICES</a>
-          <a href="#" class="features">FEATURES</a>
-          <a href="#" class="contact">CONTACT</a>
+          <a href="#home" class="home">HOME</a>
+          <a href="#about" class="about">ABOUT</a>
+          <a href="#work" class="work">WORK</a>
+          <a href="#team" class="team">TEAM</a>
+          <a href="#services" class="services">SERVICES</a>
+          <a href="#features" class="features">FEATURES</a>
+          <a href="#contact" class="contact">CONTACT</a>
         </div>
       </div>
     </nav>
     <div class="container">
-      <div class="carousel">
+      <div class="carousel" id="home">
         <div class="carouselUpperDiv">
           <h3>WELCOME TO OUR MARKETPLACE</h3>
           <p>
@@ -43,7 +43,7 @@
           <a href="#">VIDEO TOUR</a>
         </div>
       </div>
-      <div class="modestPart">
+      <div class="modestPart" id="about">
         <span class="verticalLine"></span>
         <h2 class="modest_heading">WE ARE MODEST.</h2>
         <div class="modest_container">
@@ -61,18 +61,12 @@
               quod, laudantium id quam blanditiis sapiente consequatur labore
               dolore porro molestiae veniam vero culpa
             </p>
-
-            <!-- let imgDiv = document.createElement("div");
-    let img = document.createElement("img");
-    img.src = el;
-    imgDiv.append(img);
-    Social_i_cont.append(imgDiv); -->
-            <!-- <div class="Social_i_cont"> -->
             <div class="iconsForModest">
               <a href="#" class="fa fa-facebook"></a>
               <a href="#" class="fa fa-twitter"></a>
               <a href="#" class="fa fa-google"></a>
-              <a href="#" class="fa fa-chrome"></a>
+              <a href="#" class="fa fa-dribbble" aria-hidden="true"></a>
+              <a href="#" class="fa fa-behance" aria-hidden="true"></a>
             </div>
             <!-- </div> -->
           </div>
@@ -114,14 +108,13 @@
         </div>
       </div>
       <div class="horiLine"></div>
-      <div class="meetTeamHome">
+      <div class="meetTeamHome" id="team">
         <span class="verticalLine"></span>
         <h2 class="modest_heading">MEET THE TEAM.</h2>
         <div class="homeAvatarDiv">
-          
-          <div>
+          <div class="teamBox1">
             <div class="teamImgDiv">
-              <div class="teamHoverDiv">
+              <div class="teamHoverDiv teamHoverDiv1">
                 <div class="teamIiconsDiv">
                   <a href="#" class="fa fa-twitter"></a>
                   <a href="#" class="fa fa-facebook"></a>
@@ -130,13 +123,14 @@
               </div>
               <img src="https://i.ibb.co/bbG7M0T/Man1.png" alt="person1" />
             </div>
-            <div class="teamAboutDiv">
-              <h4>GLORIA BROMLEY</h4>
-              <h5>CEO and Founder</h5>
+            <div class="teamAboutDiv teamAboutDiv1">
+              <h4 class="teamName teamName1">GLORIA BROMLEY</h4>
+              <h5 class="teamPosition teamPosition1">CEO and Founder</h5>
             </div>
-          </div><div>
+          </div>
+          <div class="teamBox2">
             <div class="teamImgDiv">
-              <div class="teamHoverDiv">
+              <div class="teamHoverDiv teamHoverDiv2">
                 <div class="teamIiconsDiv">
                   <a href="#" class="fa fa-twitter"></a>
                   <a href="#" class="fa fa-facebook"></a>
@@ -145,14 +139,14 @@
               </div>
               <img src="https://i.ibb.co/VqLXQjB/man2.jpg" alt="person1" />
             </div>
-            <div class="teamAboutDiv">
-              <h4>PAUL TORRES</h4>
-              <h5>Head of Development</h5>
+            <div class="teamAboutDiv teamAboutDiv2">
+              <h4 class="teamName2">PAUL TORRES</h4>
+              <h5 class="teamPosition2">Head of Development</h5>
             </div>
           </div>
-          <div>
+          <div class="teamBox3">
             <div class="teamImgDiv">
-              <div class="teamHoverDiv">
+              <div class="teamHoverDiv teamHoverDiv3">
                 <div class="teamIiconsDiv">
                   <a href="#" class="fa fa-twitter"></a>
                   <a href="#" class="fa fa-facebook"></a>
@@ -161,14 +155,14 @@
               </div>
               <img src="https://i.ibb.co/6X4z6zz/women.jpg" alt="person1" />
             </div>
-            <div class="teamAboutDiv">
-              <h4>JUDITH GILLETTE</h4>
-              <h5>Graphic Desinger</h5>
+            <div class="teamAboutDiv teamAboutDiv3">
+              <h4 class="teamName3">JUDITH GILLETTE</h4>
+              <h5 class="teamPosition3">Graphic Desinger</h5>
             </div>
           </div>
-          <div>
+          <div class="teamBox4">
             <div class="teamImgDiv">
-              <div class="teamHoverDiv">
+              <div class="teamHoverDiv teamHoverDiv4">
                 <div class="teamIiconsDiv">
                   <a href="#" class="fa fa-twitter"></a>
                   <a href="#" class="fa fa-facebook"></a>
@@ -177,14 +171,14 @@
               </div>
               <img src="https://i.ibb.co/VqLXQjB/man2.jpg" alt="person1" />
             </div>
-            <div class="teamAboutDiv">
-              <h4>PAUL TORRES</h4>
-              <h5>Head of Development</h5>
+            <div class="teamAboutDiv teamAboutDiv4">
+              <h4 class="teamName4">PAUL TORRES</h4>
+              <h5 class="teamPosition4">Head of Development</h5>
             </div>
           </div>
         </div>
       </div>
-      <div class="lovelyWorkHomeCont">
+      <div class="lovelyWorkHomeCont" id="work">
         <div class="lovelyWorkHome">
           <span class="LovelyVerticalLine"></span>
           <h2 class="lovely_heading">LOVELY WORK.</h2>
@@ -194,14 +188,14 @@
           <button class="showMeMoreBtn">SHOW ME MORE</button>
         </div>
       </div>
-      <div class="whatWeDoHome">
+      <div class="whatWeDoHome" id="services">
         <span class="verticalLine"></span>
         <h2 class="modest_heading">WHAT WE DO.</h2>
         <div class="renderWhatDoData">
           <!-- data render from DOM for this div -->
         </div>
       </div>
-      <div class="featuresWorkHomeCont">
+      <div class="featuresWorkHomeCont" id="features">
         <div class="featuresWorkHome">
           <span class="LovelyVerticalLine"></span>
           <h2 class="lovely_heading">FEATURES.</h2>
@@ -226,15 +220,15 @@
               <h4>YOUR EMAIL</h4>
             </div>
             <div class="imputDivs">
-              <input type="text" class="name" />
-              <input type="email" class="email" />
+              <input type="text" class="name" disabled />
+              <input type="email" class="email" disabled />
             </div>
             <h4 class="yourMessageText">YOUR MESSAGE</h4>
-            <input type="text" class="messageField" />
+            <input type="text" class="messageField" disabled />
             <button>SEND MESSAGE</button>
           </div>
         </div>
-        <div class="contactDiv">
+        <div class="contactDiv" id="contact">
           <h5>CONTACT INFORMATION</h5>
           <p class="contact1p">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
@@ -258,7 +252,8 @@
         <div id="icon">
           <a href="#" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-dribbble"></a>
+          <a href="#" class="fa fa-skype"></a>
+          <a href="#" class="fa fa-behance" aria-hidden="true"></a>
           <a href="#" class="fa fa-linkedin"></a>
         </div>
       </div>

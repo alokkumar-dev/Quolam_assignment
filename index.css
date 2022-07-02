@@ -6,49 +6,46 @@
 
 /* navbar css start here... */
 .navbar {
-  font-family: sans-serif;
-  border: 1px solid;
-  height: 80px;
+  top: 0;
   width: 100%;
-  background-color: #1d2126;
+  height: 80px;
+  z-index: 1000;
   display: flex;
   position: fixed;
-  top: 0;
-
-  z-index: 1000;
+  border: 1px solid;
+  font-family: sans-serif;
+  background-color: #1d2126;
 }
 .navbar > div {
-  display: flex;
   width: 65%;
   margin: auto;
+  display: flex;
 }
 .companyName {
-  /* border: 1px solid white; */
   flex: 2;
   margin: 30px 0;
 }
 .companyName > a {
   color: #fff;
-  text-decoration: none;
   font-size: 15px;
+  text-decoration: none;
 }
 
 .navBtns {
   flex: 3;
-  /* border: 1px solid white; */
   display: flex;
-  justify-content: space-between;
   margin: 24px 0;
+  justify-content: space-between;
 }
 .navBtns > a {
-  border: 2px solid transparent;
   color: #fff;
   font-size: 15px;
   text-decoration: none;
+  border: 2px solid transparent;
 
   padding: 5px 9px;
-  border: 2px solid transparent;
   border-radius: 4px;
+  border: 2px solid transparent;
 }
 
 .navBtns > a:hover {
@@ -68,33 +65,33 @@
 .carousel {
   width: 100%;
   height: 660px;
-  background-image: url("./images/bgi1.jpg");
-  background-repeat: no-repeat;
   position: relative;
+  background-repeat: no-repeat;
+  background-image: url("./images/bgi1.jpg");
 }
 .carouselUpperDiv {
-  color: #fff;
-  width: 654px;
-  position: absolute;
-  margin: auto;
   top: 0;
   bottom: 0;
   left: 270px;
+  margin: auto;
+  width: 654px;
+  color: #fff;
+  position: absolute;
   height: fit-content;
 }
 .carouselUpperDiv > p {
-  color: #ccd0d7;
   margin: 15px 0;
+  color: #ccd0d7;
   line-height: 23px;
   word-spacing: 3px;
 }
 .carouselUpperDiv > a {
-  text-decoration: none;
   color: #fff;
-  border: 2px solid;
   padding: 10px;
+  border: 2px solid;
   margin-right: 10px;
   border-radius: 5px;
+  text-decoration: none;
 }
 .carouselUpperDiv > a:hover {
   background-color: #23b7a3;
@@ -105,26 +102,25 @@
 
 .modestPart {
   width: 65%;
-  height: 400px;
   margin: auto;
+  height: 400px;
   margin-top: 70px;
 }
 .horiLine {
-  margin-top: 0;
   width: 100%;
-  margin: auto;
   height: 1px;
+  margin: auto;
+  margin-top: 0;
   background-color: #c8cdd0;
 }
 .verticalLine {
-  height: 24px;
-  /* border: 4px solid #c8cdd0; */
   width: 7px;
-  background-color: #c8cdd0;
-  color: #c8cdd0;
   float: left;
-  margin-right: 14px;
+  height: 24px;
   margin-top: 2px;
+  color: #c8cdd0;
+  margin-right: 14px;
+  background-color: #c8cdd0;
 }
 .modest_heading {
   font-size: 25px;
@@ -132,14 +128,14 @@
   color: #292f36;
 }
 .modest_container {
-  display: flex;
   gap: 35px;
+  display: flex;
   margin: 30px auto;
 }
 .leftSide {
+  flex: 3;
   color: #8d8f92;
   font-size: 14px;
-  flex: 3;
   font-weight: 300;
 }
 .leftSide > p {
@@ -155,18 +151,18 @@
 }
 .numBox {
   color: #fff;
-  align-items: center;
-  padding: 0 15px;
   border: none;
-  margin-bottom: 60px;
+  padding: 0 15px;
   font-size: 16px;
   font-weight: 400;
+  align-items: center;
+  margin-bottom: 60px;
   background-color: #23b7a4;
 }
 .modestBox > div > h3 {
-  color: #292f36;
   font-size: 16px;
   font-weight: 400;
+  color: #292f36;
   margin-left: 15px;
 }
 .modestBox > div > p {
@@ -184,31 +180,29 @@
 
 .iconsForModest > .fa {
   height: 60px;
-  padding: 20px 22px;
   font-size: 22px;
   margin-left: -6px;
+  padding: 20px 22px;
   background-color: #c8cdd0;
 }
 .iconsForModest > .fa:hover {
   background-color: #b5b5b6;
-  /* color: #9ebbc269; */
 }
 
 /* MODEST CSS end here...  */
 
 /* MEET TEAM CSS start here... */
 .meetTeamHome {
-  /* border: 1px solid black; */
-  height: 450px;
   width: 65%;
   margin: auto;
+  height: 450px;
   margin-top: 70px;
 }
 .homeAvatarDiv {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
   gap: 40px;
+  display: grid;
   margin-top: 50px;
+  grid-template-columns: repeat(4, 1fr);
 }
 .homeAvatarDiv > div {
   cursor: pointer;
@@ -226,45 +220,44 @@
 }
 .teamHoverDiv {
   z-index: 4;
-  margin-top: 0;
-  border: 1px solid red;
-  height: 100%;
+  height: 98%;
   width: 100%;
-  position: relative;
-  background-color: #d3d4d658;
   margin: auto;
-}
-.teamIiconsDiv{
+  display: none;
+  margin-top: 0;
   position: absolute;
-  /* border: 2px solid red; */
-  height:auto;
-  width: fit-content;
- margin: 50% 17%;
+  background-color: #d3d4d658;
 }
-.teamIiconsDiv>a{
+.teamIiconsDiv {
+  height: auto;
+  margin: 50% 17%;
+  position: absolute;
+  width: fit-content;
+}
+.teamIiconsDiv > a {
+  width: 42px;
+  height: 42px;
   margin-top: 0;
   font-size: 20px;
-  height: 42px;
-  width: 42px;
   padding: 10px 10px;
   background-color: #3b454e;
-  /* border: 1px solid blue; */
 }
-.teamIiconsDiv>.fa-facebook,.teamIiconsDiv>.fa-linkedin{
+.teamIiconsDiv > .fa-facebook,
+.teamIiconsDiv > .fa-linkedin {
   margin-left: -13px;
 }
-.teamIiconsDiv>a:hover{
+.teamIiconsDiv > a:hover {
   background-color: #4d5a62;
 }
 .teamAboutDiv {
   margin-top: -4px;
-  background-color: #e1e6ea;
   padding: 15px;
+  background-color: #e1e6ea;
 }
 .teamAboutDiv > h4 {
   font-size: 14px;
-  margin-bottom: 4px;
   font-weight: 400;
+  margin-bottom: 4px;
 }
 .teamAboutDiv > h5 {
   font-size: 13px;
@@ -276,48 +269,47 @@
 
 .lovelyWorkHomeCont {
   width: 100%;
-  background-color: #3a454d;
   margin-top: 60px;
+  background-color: #3a454d;
 }
 .lovelyWorkHome {
   width: 65%;
-  /* border: 1px solid #fff; */
   margin: auto;
   padding-top: 60px;
 }
 .renderLovelyImg {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  display: grid;
   margin-top: 50px;
+  grid-template-columns: repeat(3, 1fr);
 }
 .renderLovelyImg > div {
-  position: relative;
   cursor: pointer;
+  position: relative;
 }
 .lovelyImgHoverDiv {
+  z-index: 6;
   height: 77%;
   width: 100%;
-  z-index: 6;
-  position: absolute;
-  background-color: #5f5b5b59;
+  color: #fff;
   display: none;
+  font-size: 25px;
   text-align: center;
   padding-top: 90px;
-  color: #fff;
-  font-size: 25px;
+  position: absolute;
+  background-color: #5f5b5b59;
 }
 .lovelyImage {
   width: 100%;
 }
 .LovelyVerticalLine {
-  height: 24px;
-  width: 7px;
-  background-color: #aaaaaa72;
-  color: #4e5a62;
   float: left;
-  margin-right: 14px;
+  width: 7px;
+  height: 24px;
+  color: #4e5a62;
   margin-top: 2px;
+  margin-right: 14px;
+  background-color: #aaaaaa72;
 }
 .lovely_heading {
   font-size: 25px;
@@ -325,57 +317,55 @@
   color: #e1e6ea;
 }
 .lovelyWorkText {
-  position: absolute;
   bottom: 0;
-  padding: 17px;
   width: 100%;
+  display: none;
+  padding: 17px;
   font-size: 16px;
   font-weight: 300;
-  background-color: #292f36;
-  display: none;
   color: #e1e6ea;
+  position: absolute;
+  background-color: #292f36;
 }
 .showMeMoreBtn {
+  cursor: pointer;
   margin-left: 42%;
-  margin-right: 42%;
+  color: #e1e6ea;
   margin-top: 50px;
+  margin-right: 42%;
   margin-bottom: 50px;
   padding: 10px 15px;
   border-radius: 5px;
   border: 2px solid #e1e6ea;
   background-color: transparent;
-  color: #e1e6ea;
-  cursor: pointer;
 }
 /* LOVELY WORK CSS end here... */
 
 /* Waht we Do CSS start here... */
 
 .whatWeDoHome {
-  padding-top: 60px;
   width: 65%;
-  /* border: 1px solid black; */
   margin: auto;
   height: 600px;
+  padding-top: 60px;
 }
 .renderWhatDoData {
-  margin-top: 60px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  display: grid;
+  margin-top: 60px;
+  grid-template-columns: repeat(4, 1fr);
 }
 .renderWhatDoData > div {
   text-align: center;
-  /* margin-bottom: 30px; */
 }
 .renderWhatDoData > div > img {
-  margin-top: 10px;
   width: 70px;
   height: 70px;
+  margin-top: 10px;
 }
 .renderWhatDoData > div > h4 {
-  font-size: 14px;
   margin: 15px;
+  font-size: 14px;
   font-weight: 400;
 }
 .renderWhatDoData > div > p {
@@ -391,42 +381,39 @@
 
 /* Features section CSS start here... */
 .featuresWorkHomeCont {
-  margin-top: 150px;
   width: 100%;
+  margin-top: 150px;
   background-color: #3a454d;
-  /* height: 750px; */
 }
 .featuresWorkHome {
   width: 65%;
-  /* border: 1px solid #fff; */
   margin: auto;
   padding-top: 75px;
 }
 .renderFeaturesImg {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
 }
 .renderFeaturesImg > div {
   margin-top: 60px;
-  /* border: 1px solid red; */
 }
 .renderFeaturesImg > div > img {
   width: 100%;
 }
 .renderFeaturesImg > div > h4 {
+  margin: 25px 0;
   font-size: 16px;
   font-weight: 300;
   color: #e1e6ea;
-  margin: 25px 0;
   line-height: 23px;
   word-spacing: 3px;
 }
 .renderFeaturesImg > div > p {
+  margin: 30px 0;
   font-size: 14px;
   font-weight: 300;
   color: #c8cdd0;
-  margin: 30px 0;
   line-height: 21px;
   word-spacing: 2px;
   padding-bottom: 30px;
@@ -439,20 +426,20 @@
   margin-top: 50px;
 }
 .stayVerticalLine {
-  margin-left: 17.6%;
-  height: 24px;
   width: 7px;
-  background-color: #c8cdd0;
-  color: #c8cdd0;
   float: left;
+  height: 24px;
+  color: #c8cdd0;
   margin-right: 14px;
+  margin-left: 17.6%;
+  background-color: #c8cdd0;
 }
 .stay_heading {
   font-size: 25px;
   font-weight: 600;
   margin-top: 27px;
-  margin-bottom: 27px;
   color: #292f36;
+  margin-bottom: 27px;
 }
 .stayTouchData {
   height: 350px;
@@ -461,57 +448,56 @@
 /* Send message CSS start here... */
 
 .sendMessageDiv {
-  position: absolute;
   width: 450px;
-  color: #5a6068;
   padding: 25px;
   margin-left: 57%;
+  color: #5a6068;
   margin-top: -120px;
+  position: absolute;
   background-color: #fff;
 }
 .fieldNames {
-  display: flex;
-  width: 100%;
   gap: 130px;
+  width: 100%;
+  display: flex;
   padding-bottom: 10px;
 }
 .imputDivs > input {
-  height: 40px;
   width: 48%;
+  border: none;
+  height: 40px;
   font-size: 18px;
   background-color: #e2e4e5;
-  border: none;
 }
 .email {
   margin-left: 10px;
 }
 .messageField {
   width: 100%;
-  height: 120px;
-  background-color: #e2e4e5;
   border: none;
+  height: 120px;
   font-size: 18px;
+  background-color: #e2e4e5;
 }
 .yourMessageText {
   padding-top: 20px;
   padding-bottom: 10px;
 }
 .sendMessageDiv > button {
-  font-size: 14px;
-  background-color: #0bab95;
-  color: #fff;
-  padding: 15px 20px;
   border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
   margin-top: 10px;
   border-radius: 5px;
-  cursor: pointer;
+  padding: 15px 20px;
+  background-color: #0bab95;
 }
 /* Send messsage CSS end here... */
 .contactDiv {
-  /* border: 1px solid black; */
   width: 580px;
-  height: 232px;
   margin: 35px;
+  height: 232px;
   margin-top: 60px;
   margin-left: 17.6%;
 }
@@ -521,22 +507,22 @@
   font-weight: 600;
 }
 .contactDiv > p {
+  margin: 35px 0;
   font-size: 14px;
   line-height: 23px;
   word-spacing: 3px;
-  margin: 35px 0;
   color: #8d8f92;
 }
 
 /* Footerbar CSS start here... */
 
 .footerBar {
-  background-color: #3a454d;
-  display: flex;
-  justify-content: space-around;
-  margin: auto;
   width: 100%;
+  margin: auto;
   height: 90px;
+  display: flex;
+  background-color: #3a454d;
+  justify-content: space-around;
 }
 
 .leftSideFooter > p {
@@ -544,9 +530,9 @@
   color: #c8cdd0;
 }
 .fa {
-  margin-top: 40px;
-  color: #fff;
   height: 50px;
+  color: #fff;
+  margin-top: 40px;
   margin-right: 10px;
   text-decoration: none;
 }
